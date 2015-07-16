@@ -24,8 +24,7 @@ can imagine would take more time than I have. It would mean converting to string
 the numbers, dropping in commas as the number is rebuilt, and it would all be couched in conditional
 statements. Fun, but not as fun as a good night's rest.
 
-
-
+*/
  var person = new Object();
 
 function Person(name, employeeNumber, annSalary, rating){
@@ -123,26 +122,3 @@ function getIncomeAdjustment(salary){
   }
   return incomeAdjustment;
 }
-*/
-var number = "1234567";
-    
-function addCommas(number){
-  if (number.length>3){
-    var store = [];
-    var result = [];
-    for (i = 0; i < number.length; i++){
-      store[i] = number.charAt(i);
-    }
-    for (i = 0; i < store.length; i++){
-      
-      result = result + store.pop;
-      result = result + store.pop;
-      result = result + store.pop;
-      result = result + ",";
-    }
-
-  };
-      console.log(store);
-}
-addCommas(1234567);
-console.log(addCommas(1234567));
